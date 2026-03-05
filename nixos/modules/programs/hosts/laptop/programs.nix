@@ -66,7 +66,6 @@ hardware.graphics = {
         # ── Core Utilities ────────────────────────────────
         vim
         dolphin-emu
-        fuse
         wget
         git
         stow
@@ -115,7 +114,6 @@ hardware.graphics = {
         yaru-theme
 
         # ── Productivity / Office ───────────────────────
-        libreoffice
         keepassxc
         teams-for-linux
 
@@ -143,6 +141,7 @@ hardware.graphics = {
       ]
       ++ (with pkgs-stable; [
         mcomix
+        libreoffice
         prismlauncher
       ]);
   };
