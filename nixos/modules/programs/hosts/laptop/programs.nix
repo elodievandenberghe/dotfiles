@@ -75,6 +75,7 @@ hardware.graphics = {
         bat
         distrobox
         sl
+	brightnessctl
         # ── Shell / System Info ──────────────────────────
         fastfetch
         btop
