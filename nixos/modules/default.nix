@@ -26,12 +26,14 @@
     ./system/kernel.nix
     ./system/kernel_xanmod.nix
     ./system/nvidia.nix
+    ./system/swap.nix
     ./users/elodie.nix
     ./virtualization/qemu.nix
     ./virtualization/podman.nix
     ./services/wireguard.nix
     ./services/default_browser.nix
   ];
+  swap.enable = lib.mkDefault true; 
   pulseaudio.enable = lib.mkDefault true;
   wireguard.enable = lib.mkDefault true;
   udisk.enable = lib.mkDefault true;

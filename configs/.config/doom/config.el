@@ -78,4 +78,3 @@
 (global-set-key (kbd "M-<right> ") #'windmove-right)
 (global-set-key (kbd "M-<down>") #'windmove-down)
 (setq doom-theme 'catppuccin)
-(setq doom-font (font-spec :size 14.0))
