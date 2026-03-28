@@ -10,7 +10,7 @@
     ./audio/pulseaudio.nix
     ./display/xserver.nix
     ./display/de_wm/qtile.nix
-    ./display/displaymanager/ligthdm.nix
+    ./display/displaymanager/lightdm.nix
     ./networking/networkmanager.nix
     ./networking/hosts/laptop/firewall.nix
     ./programs/common_programs.nix
@@ -39,6 +39,7 @@
   udisk.enable = lib.mkDefault true;
   networkmanager.enable = lib.mkDefault true;
   commonPrograms.enable = lib.mkDefault true;
+  lightdm.enable = lib.mkDefault true; 
   openssh.enable = lib.mkDefault true;
   timezone.enable = lib.mkDefault true;
   librewolfDefault.enable = lib.mkDefault true; 
