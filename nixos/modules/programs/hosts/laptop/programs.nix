@@ -92,9 +92,7 @@ hardware.graphics = {
 
         # ── Development Tools ────────────────────────────
         dbeaver-bin
-	jetbrains.rider 
-        dotnetCorePackages.dotnet_8.sdk
-    	dotnetCorePackages.dotnet_8.aspnetcore 
+	android-studio
  	nodejs
         lxappearance
         csharpier

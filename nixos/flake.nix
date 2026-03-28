@@ -22,21 +22,22 @@
 
     lib = nixpkgs.lib;
   in {
-    elodie-laptop = lib.nixosSystem {
-      inherit system;
-      specialArgs = {
-        inherit inputs pkgs-stable;
+    nixosConfigurations = {
+      elodie-laptop = lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs pkgs-stable;
+        };
+        modules = [ ./hosts/laptop/configuration.nix ];
       };
-      modules = [ ./hosts/laptop/configuration.nix ];
-    };
 
-    hypotheticaldesktop = lib.nixosSystem {
-      inherit system;
-      specialArgs = {
-        inherit inputs pkgs-stable;
+      hypotheticaldesktop = lib.nixosSystem {
+        inherit system;
+        specialArgs = {
+          inherit inputs pkgs-stable;
+        };
+        modules = [ ./hosts/hypotheticaldesktop/configuration.nix ];
       };
-      modules = [ ./hosts/hypotheticaldesktop/configuration.nix ];
     };
   };
 }
-
