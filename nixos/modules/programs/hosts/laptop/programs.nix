@@ -65,7 +65,6 @@ hardware.graphics = {
       [
         # ── Core Utilities ────────────────────────────────
         vim
-        dolphin-emu
         wget
         git
         stow
@@ -73,7 +72,6 @@ hardware.graphics = {
         p7zip
         tree
         bat
-        distrobox
         sl
 	brightnessctl
         # ── Shell / System Info ──────────────────────────
@@ -92,11 +90,8 @@ hardware.graphics = {
 
         # ── Development Tools ────────────────────────────
         dbeaver-bin
-	android-studio
  	nodejs
         lxappearance
-        csharpier
-        omnisharp-roslyn
 		
 
         # ── Audio / Video Tools ──────────────────────────
@@ -105,12 +100,9 @@ hardware.graphics = {
 
         # ── GUI / Desktop Utilities ──────────────────────
         kitty
-        nitrogen
         rofi
         flameshot
         gsimplecal
-        kdePackages.breeze-icons
-        yaru-theme
 
         # ── Productivity / Office ───────────────────────
         keepassxc
@@ -135,7 +127,7 @@ hardware.graphics = {
         portmod
 
         # ── Browsers ─────────────────────────────────────
-        librewolf
+	firefox
         chromium
       ]
       ++ (with pkgs-stable; [

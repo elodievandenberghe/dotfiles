@@ -12,19 +12,15 @@
     ./hardware-configuration.nix
     ../../modules/default.nix
   ];
-  xserver.enable = true;
-  qtile.enable = true;
+  sway.enable = true;
   firewall.enable = true;
   laptopPrograms.enable = true;
-  backlightOptions.enable = true;
   bluetooth.enable = true;
   flatpak.enable = true;
   libinput.enable = true;
-  picom.enable = true;
   openssh.enable = true;
   timezone.enable = true;
-  kernelXanmod.enable = true;
-  nvidia.enable = true;
+  kernel.enable = true;
   podman.enable = true;
   qemu.enable = true;
 
