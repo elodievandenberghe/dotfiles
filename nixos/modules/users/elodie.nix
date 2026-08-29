@@ -20,7 +20,8 @@
     };
 
     users.defaultUserShell = pkgs.zsh;
-
+    xdg.portal.enable = true;
+   xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
     users.users.vintagestory = {
       isNormalUser = true;
       extraGroups = [

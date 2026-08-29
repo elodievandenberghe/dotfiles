@@ -14,14 +14,15 @@
         src = fetchFromGitHub {
           owner = "NoiSek";
           repo = "Aether";
-          rev = "main";
+          rev = "master";
           sha256 = "1w5w15py5rbrw1ad24din7kwcjz82mh625d7b4r7i8kzb9knl7d6";
         };
 
         installPhase = ''
-          mkdir -p $out/share/themes
-          cp -r Aether $out/share/themes/
-        '';
+        mkdir -p $out/share/themes/Aether
+  cp -r * $out/share/themes/Aether/ 
+	
+	'';
       })
     ];
 
@@ -29,14 +30,14 @@
 
     services.xserver.displayManager.lightdm.greeters.gtk = {
       enable = true;
-      theme = "Aether";
+      theme.name = "Aether";
     };
 
     services.xserver.displayManager.lightdm.greeters.gtk.extraConfig = ''
-      theme-name=Aether
-      icon-theme-name=Papirus
-      font-name=Sans 10
-      cursor-theme-name=Adwaita
+    [greeter]
+    theme-name=Aether
+    font-name=Sans 10
+    cursor-theme-name=Adwaita
     '';
   };
 }
