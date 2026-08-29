@@ -24,7 +24,7 @@
     ./users/elodie.nix
     ./virtualization/qemu.nix
     ./virtualization/podman.nix
-    ./modules/programs/hosts/laptop/programs.nix
+    ./programs/hosts/laptop/programs.nix
   ];
   swap.enable = lib.mkDefault true; 
   pulseaudio.enable = lib.mkDefault true;
