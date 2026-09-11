@@ -1,0 +1,12 @@
+background-color=#27232b
+border-color=#d8cab8
+border-radius=5
+border-size=1
+default-timeout=3000
+font="Maple Mono"
+icons=true
+ignore-timeout=false
+layer=top
+margin=5
+markup=true
+

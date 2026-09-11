@@ -26,24 +26,22 @@
       "kvm"
     ];
 
-hardware.graphics = {
-  enable = true;
-  enable32Bit = true;
-};
+    hardware.graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
 
-   fonts.packages = with pkgs; [
-     fira-code
-     fira-code-symbols
-     maple-mono.truetype
-     maple-mono.NF-unhinted
-     maple-mono.NF-CN-unhinted
-   ];
-
+    fonts.packages = with pkgs; [
+      fira-code
+      fira-code-symbols
+      maple-mono.truetype
+      maple-mono.NF-unhinted
+      maple-mono.NF-CN-unhinted
+    ];
 
     programs.nh = {
       enable = true;
     };
-
 
     programs.vim = {
       enable = true;
@@ -77,7 +75,12 @@ hardware.graphics = {
         tree
         bat
         sl
-	brightnessctl
+        networkmanager
+        clang
+        libtool
+        cmake
+        gnumake
+        brightnessctl
         xdg-utils
         xdg-desktop-portal
         xdg-desktop-portal-wlr
@@ -97,9 +100,8 @@ hardware.graphics = {
 
         # ── Development Tools ────────────────────────────
         dbeaver-bin
- 	nodejs
+        nodejs
         lxappearance
-		
 
         # ── Audio / Video Tools ──────────────────────────
         mpv
@@ -109,7 +111,7 @@ hardware.graphics = {
         kitty
         wofi
         gsimplecal
-	grim
+        grim
         slurp
 
         # ── Productivity / Office ───────────────────────
@@ -122,7 +124,7 @@ hardware.graphics = {
         qbittorrent
 
         # ── Games & Launchers ────────────────────────────
-	vintagestory
+        vintagestory
         pcsx2
         vesktop
         nautilus
@@ -130,7 +132,7 @@ hardware.graphics = {
         portmod
 
         # ── Browsers ─────────────────────────────────────
-	firefox
+        firefox
         chromium
       ]
       ++ (with pkgs-stable; [

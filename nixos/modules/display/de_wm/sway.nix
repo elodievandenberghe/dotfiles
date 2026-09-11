@@ -20,16 +20,16 @@
     # Enable Sway.
     programs.sway = {
       enable = true;
-      package = pkgs.swayfx; 
+      package = pkgs.swayfx;
       wrapperFeatures.gtk = true;
     };
-xdg.portal = {
-  enable = true;
-  wlr.enable = true;
-  extraPortals = with pkgs; [
-    xdg-desktop-portal-gtk
-  ];
-};
+    xdg.portal = {
+      enable = true;
+      wlr.enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-gtk
+      ];
+    };
 
     services.greetd = {
       enable = true;
@@ -42,4 +42,3 @@ xdg.portal = {
     };
   };
 }
-

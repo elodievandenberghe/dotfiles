@@ -74,7 +74,9 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
-(global-set-key (kbd "M-<left>") #'windmove-left)
-(global-set-key (kbd "M-<right> ") #'windmove-right)
-(global-set-key (kbd "M-<down>") #'windmove-down)
+(global-set-key (kbd "M-h") #'windmove-left)
+(global-set-key (kbd "M-l") #'windmove-right)
+(global-set-key (kbd "M-k") #'windmove-down)
+(global-set-key (kbd "M-j") #'windmove-up)
 (setq doom-theme 'catppuccin)
+(setq doom-font (font-spec :family "Maple Mono" :size 14))
