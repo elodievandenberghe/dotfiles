@@ -16,12 +16,20 @@
 
     # Enables Gnome Keyring to store secrets for applications.
     services.gnome.gnome-keyring.enable = true;
-
+    programs.waybar.enable = true;
     # Enable Sway.
     programs.sway = {
       enable = true;
+      package = pkgs.swayfx; 
       wrapperFeatures.gtk = true;
     };
+xdg.portal = {
+  enable = true;
+  wlr.enable = true;
+  extraPortals = with pkgs; [
+    xdg-desktop-portal-gtk
+  ];
+};
 
     services.greetd = {
       enable = true;

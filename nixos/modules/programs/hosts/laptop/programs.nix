@@ -26,15 +26,19 @@
       "kvm"
     ];
 
-    programs.nix-ld.libraries = with pkgs; [
-      xorg.libICE
-    ];
-
-
 hardware.graphics = {
   enable = true;
   enable32Bit = true;
 };
+
+   fonts.packages = with pkgs; [
+     fira-code
+     fira-code-symbols
+     maple-mono.truetype
+     maple-mono.NF-unhinted
+     maple-mono.NF-CN-unhinted
+   ];
+
 
     programs.nh = {
       enable = true;
@@ -74,6 +78,9 @@ hardware.graphics = {
         bat
         sl
 	brightnessctl
+        xdg-utils
+        xdg-desktop-portal
+        xdg-desktop-portal-wlr
         # ── Shell / System Info ──────────────────────────
         fastfetch
         btop
@@ -82,7 +89,7 @@ hardware.graphics = {
         dysk
 
         # ── Package / Nix Tools ──────────────────────────
-        nixfmt-rfc-style
+        nixfmt
         nix-prefetch-git
         nix-direnv
         direnv
@@ -100,9 +107,10 @@ hardware.graphics = {
 
         # ── GUI / Desktop Utilities ──────────────────────
         kitty
-        rofi
-        flameshot
+        wofi
         gsimplecal
+	grim
+        slurp
 
         # ── Productivity / Office ───────────────────────
         keepassxc
@@ -114,15 +122,10 @@ hardware.graphics = {
         qbittorrent
 
         # ── Games & Launchers ────────────────────────────
-        lutris
 	vintagestory
         pcsx2
         vesktop
-        wineWowPackages.stable
-        winetricks
-        protontricks
-        appimage-run
-        xfce.thunar
+        nautilus
         openmw
         portmod
 
