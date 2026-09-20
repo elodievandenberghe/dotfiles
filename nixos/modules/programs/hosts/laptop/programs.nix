@@ -101,7 +101,7 @@
         # ── Development Tools ────────────────────────────
         dbeaver-bin
         nodejs
-        lxappearance
+	tmux
 
         # ── Audio / Video Tools ──────────────────────────
         mpv
@@ -113,6 +113,7 @@
         gsimplecal
         grim
         slurp
+	swaylock
 
         # ── Productivity / Office ───────────────────────
         keepassxc
